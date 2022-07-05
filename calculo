@@ -1,0 +1,55 @@
+import math
+
+num1 = input('Digite um numero :  ')
+if num1 == "pi":
+    num1=float(math.pi)
+else: 
+    num1 = float(num1)
+
+print('''Escolha a operação: 
+[ 1 ] Adição
+[ 2 ] Subtração
+[ 3 ] Multiplicação
+[ 4 ] Divisão
+[ 5 ] Potenciação 
+[ 6 ] Média aritmética 
+[ 7 ] Raiz quadrada
+[ 8 ] Cosseno 
+[ 9 ] Seno
+[ 10 ] Tangente 
+ ''')
+opcao = int(input('Sua opção: '))
+
+if opcao == 1:
+    num2 = float(input('Digite outro número:  '))
+    print('A soma dos números digitados resulta em: ' ,num1 + num2 )
+elif opcao == 2: 
+    num2 = float(input('Digite outro número:  '))
+    print('A subtração dos números digitados resulta em: ' ,num1 - num2)
+elif opcao == 3: 
+    num2 = float(input('Digite outro número:  '))
+    print('A multiplicação dos números digitados resulta em: ' ,num1 * num2)
+elif opcao == 4: 
+    num2 = float(input('Digite outro número : '))
+    print('A divisão dos números digitados resulta em: ', num1 / num2 )
+elif opcao == 5:
+    int(num1)
+    num2 = int(input('Digite o expoente : '))
+    print('O resultado da potenciação é : ',num1 ** num2)
+elif opcao == 6: 
+    num2 = float(input('Digite outro numero : '))
+    print('A média aritmétrica resulta em : ',(num1+num2)/2)
+elif opcao == 7:
+    print('A raiz quadrada do número digitado é: ' ,math.sqrt(num1))
+elif opcao == 8:
+    c= math.cos(num1)
+    print('O cosseno do número digitado é: ',c)
+elif opcao == 9:
+    s = math.sin(num1)
+    print('O seno do numero digitado é: ',s)
+elif opcao == 10: 
+    t = math.tan(num1)
+    print('A tangente do número digitado é: ',t)
+else: 
+    print('Opção invalida, digite um número entre as opções ')
+    
